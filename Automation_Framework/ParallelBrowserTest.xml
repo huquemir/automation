@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="ParallelBrowserTestExample" thread-count="3" parallel="tests">
+    <test name="Chrome Browser Test 1" >
+    <parameter name="browser" value="chrome" />
+    <classes>
+       <class name="com.baseclass.BaseClass" />
+        
+    </classes>
+  </test>
+  
+     <test name="Chrome Browser Test 2" >
+    <parameter name="browser" value="chrome" />
+    <classes>
+       <class name="com.baseclass.BaseClass" />   
+    </classes>
+  </test>
+  
+      <test name="Chrome Browser Test 3" >
+    <parameter name="browser" value="chrome" />
+    <classes>
+       <class name="com.baseclass.BaseClass" />   
+    </classes>
+  </test>
+  
+  
+
+   
+</suite> 

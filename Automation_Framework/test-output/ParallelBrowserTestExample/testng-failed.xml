@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="6" guice-stage="DEVELOPMENT" name="Failed suite [ParallelBrowserTestExample]" parallel="tests">
+  <test thread-count="6" name="Parallel Browser Test 3(failed)" parallel="tests">
+    <classes>
+      <class name="com.runner.MyRunner">
+        <methods>
+          <include name="runScenario" invocation-numbers="0"/>
+          <include name="tearDownClass"/>
+          <include name="setUpClass"/>
+        </methods>
+      </class> <!-- com.runner.MyRunner -->
+    </classes>
+  </test> <!-- Parallel Browser Test 3(failed) -->
+  <test thread-count="6" name="Parallel Browser Test 2(failed)" parallel="tests">
+    <classes>
+      <class name="com.runner.MyRunner">
+        <methods>
+          <include name="runScenario" invocation-numbers="0"/>
+          <include name="tearDownClass"/>
+          <include name="setUpClass"/>
+        </methods>
+      </class> <!-- com.runner.MyRunner -->
+    </classes>
+  </test> <!-- Parallel Browser Test 2(failed) -->
+</suite> <!-- Failed suite [ParallelBrowserTestExample] -->

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="9960" started-at="2022-02-06T18:09:28Z" finished-at="2022-02-06T18:09:38Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.MyRunner@2638011]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Zoopla Login Test" duration-ms="9960" started-at="2022-02-06T18:09:28Z" finished-at="2022-02-06T18:09:38Z">
+      <class name="com.runner.MyRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.runner.MyRunner@2638011]" name="setUpClass" is-config="true" duration-ms="693" started-at="2022-02-06T18:09:28Z" finished-at="2022-02-06T18:09:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.MyRunner@2638011]" name="runScenario" duration-ms="7775" started-at="2022-02-06T18:09:29Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-02-06T18:09:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User login with valid username and verify page title"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[User is able to login with valid username & password]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Sign in to Zoopla - Zoopla] but found [Sign in to Zoopla - Zooplas67]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Sign in to Zoopla - Zoopla] but found [Sign in to Zoopla - Zooplas67]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at com.stepdefinition.LoginFunction.user_is_able_to_verify_successful_login_verify_page_title(LoginFunction.java:76)
+at ✽.User is able to verify successful login & verify page title(file:///C:/Users/mirhuque/eclipse-workspace/Automation_Project/Features/login.feature:13)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.runner.MyRunner@2638011]" name="tearDownClass" is-config="true" duration-ms="125" started-at="2022-02-06T18:09:38Z" finished-at="2022-02-06T18:09:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.runner.MyRunner -->
+    </test> <!-- Zoopla Login Test -->
+  </suite> <!-- Suite -->
+</testng-results>

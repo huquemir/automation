@@ -1,0 +1,148 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2022-02-06T18:09:29.423Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1991000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.hooks.Hooks.initialization()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "User login with valid username and verify page title",
+        "description": "",
+        "id": "user-is-able-to-login-with-valid-username-\u0026-password;user-login-with-valid-username-and-verify-page-title",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.hooks.Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 40000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User can open any browser",
+            "match": {
+              "location": "com.stepdefinition.LoginFunction.user_can_open_any_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2680000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User is able to enter \"https://www.zoopla.co.uk/\" url",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.zoopla.co.uk/\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.stepdefinition.LoginFunction.user_is_able_to_enter_url(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2181000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User clicks on the Login in button",
+            "match": {
+              "location": "com.stepdefinition.LoginFunction.user_clicks_on_the_login_in_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 516000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User enters email \"huque.mir@gmail.com\" and password \"123456\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"huque.mir@gmail.com\"",
+                  "offset": 18
+                },
+                {
+                  "val": "\"123456\"",
+                  "offset": 53
+                }
+              ],
+              "location": "com.stepdefinition.LoginFunction.user_enters_email_and_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 55000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User clicks on Sign in button",
+            "match": {
+              "location": "com.stepdefinition.LoginFunction.user_clicks_on_sign_in_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: expected [Sign in to Zoopla - Zoopla] but found [Sign in to Zoopla - Zooplas67]\r\n\tat org.testng.Assert.fail(Assert.java:96)\r\n\tat org.testng.Assert.failNotEquals(Assert.java:776)\r\n\tat org.testng.Assert.assertEqualsImpl(Assert.java:137)\r\n\tat org.testng.Assert.assertEquals(Assert.java:118)\r\n\tat org.testng.Assert.assertEquals(Assert.java:453)\r\n\tat org.testng.Assert.assertEquals(Assert.java:463)\r\n\tat com.stepdefinition.LoginFunction.user_is_able_to_verify_successful_login_verify_page_title(LoginFunction.java:76)\r\n\tat ✽.User is able to verify successful login \u0026 verify page title(file:///C:/Users/mirhuque/eclipse-workspace/Automation_Project/Features/login.feature:13)\r\n",
+              "duration": 42000000,
+              "status": "failed"
+            },
+            "line": 13,
+            "name": "User is able to verify successful login \u0026 verify page title",
+            "match": {
+              "location": "com.stepdefinition.LoginFunction.user_is_able_to_verify_successful_login_verify_page_title()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      }
+    ],
+    "name": "User is able to login with valid username \u0026 password",
+    "description": "Description: \"User login to zoopla wbsite and verify login\"",
+    "id": "user-is-able-to-login-with-valid-username-\u0026-password",
+    "keyword": "Feature",
+    "uri": "file:Features/login.feature",
+    "tags": [
+      {
+        "name": "@smoke",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
