@@ -11,7 +11,6 @@ public class BDDStyleAPI {
 	
 	@Test
 	public static void getBDDMethod() {
-		
 		given().param("Content-type", "application/json; charset=utf-8")
 		.when().get(domain +"/posts").then().statusCode(200).log().all();
 		
