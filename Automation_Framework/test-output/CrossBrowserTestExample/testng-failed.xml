@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [CrossBrowserTestExample]">
-  <test thread-count="5" name="Chrome Browser Test(failed)">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [CrossBrowserTestExample]">
+  <test thread-count="2" name="Chrome Browser Test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
       <class name="com.baseclass.BaseClass">
@@ -12,15 +12,4 @@
       </class> <!-- com.baseclass.BaseClass -->
     </classes>
   </test> <!-- Chrome Browser Test(failed) -->
-  <test thread-count="5" name="Firefox Browser Test(failed)">
-    <parameter name="browser" value="firefox"/>
-    <classes>
-      <class name="com.baseclass.BaseClass">
-        <methods>
-          <include name="setUp"/>
-          <include name="openApplication"/>
-        </methods>
-      </class> <!-- com.baseclass.BaseClass -->
-    </classes>
-  </test> <!-- Firefox Browser Test(failed) -->
 </suite> <!-- Failed suite [CrossBrowserTestExample] -->

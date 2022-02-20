@@ -1,26 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="6" guice-stage="DEVELOPMENT" name="Failed suite [ParallelBrowserTestExample]" parallel="tests">
-  <test thread-count="6" name="Parallel Browser Test 3(failed)" parallel="tests">
+<suite thread-count="3" guice-stage="DEVELOPMENT" name="Failed suite [ParallelBrowserTestExample]" parallel="tests">
+  <test thread-count="3" name="Chrome Browser Test 3(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.runner.MyRunner">
+      <class name="com.baseclass.BaseClass">
         <methods>
-          <include name="runScenario" invocation-numbers="0"/>
-          <include name="tearDownClass"/>
-          <include name="setUpClass"/>
+          <include name="setUp"/>
+          <include name="openApplication"/>
         </methods>
-      </class> <!-- com.runner.MyRunner -->
+      </class> <!-- com.baseclass.BaseClass -->
     </classes>
-  </test> <!-- Parallel Browser Test 3(failed) -->
-  <test thread-count="6" name="Parallel Browser Test 2(failed)" parallel="tests">
+  </test> <!-- Chrome Browser Test 3(failed) -->
+  <test thread-count="3" name="Chrome Browser Test 1(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.runner.MyRunner">
+      <class name="com.baseclass.BaseClass">
         <methods>
-          <include name="runScenario" invocation-numbers="0"/>
-          <include name="tearDownClass"/>
-          <include name="setUpClass"/>
+          <include name="setUp"/>
+          <include name="openApplication"/>
         </methods>
-      </class> <!-- com.runner.MyRunner -->
+      </class> <!-- com.baseclass.BaseClass -->
     </classes>
-  </test> <!-- Parallel Browser Test 2(failed) -->
+  </test> <!-- Chrome Browser Test 1(failed) -->
+  <test thread-count="3" name="Chrome Browser Test 2(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.baseclass.BaseClass">
+        <methods>
+          <include name="setUp"/>
+          <include name="openApplication"/>
+        </methods>
+      </class> <!-- com.baseclass.BaseClass -->
+    </classes>
+  </test> <!-- Chrome Browser Test 2(failed) -->
 </suite> <!-- Failed suite [ParallelBrowserTestExample] -->

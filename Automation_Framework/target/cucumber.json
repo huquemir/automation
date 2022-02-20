@@ -3,11 +3,11 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-02-06T18:09:29.423Z",
+        "start_timestamp": "2022-02-07T03:50:00.474Z",
         "before": [
           {
             "result": {
-              "duration": 1991000000,
+              "duration": 2808000000,
               "status": "passed"
             },
             "match": {
@@ -34,7 +34,7 @@
         "steps": [
           {
             "result": {
-              "duration": 40000000,
+              "duration": 65000000,
               "status": "passed"
             },
             "line": 8,
@@ -46,7 +46,7 @@
           },
           {
             "result": {
-              "duration": 2680000000,
+              "duration": 3280000000,
               "status": "passed"
             },
             "line": 9,
@@ -64,7 +64,7 @@
           },
           {
             "result": {
-              "duration": 2181000000,
+              "duration": 3262000000,
               "status": "passed"
             },
             "line": 10,
@@ -76,7 +76,7 @@
           },
           {
             "result": {
-              "duration": 516000000,
+              "duration": 720000000,
               "status": "passed"
             },
             "line": 11,
@@ -98,7 +98,7 @@
           },
           {
             "result": {
-              "duration": 55000000,
+              "duration": 67000000,
               "status": "passed"
             },
             "line": 12,
@@ -110,8 +110,8 @@
           },
           {
             "result": {
-              "error_message": "java.lang.AssertionError: expected [Sign in to Zoopla - Zoopla] but found [Sign in to Zoopla - Zooplas67]\r\n\tat org.testng.Assert.fail(Assert.java:96)\r\n\tat org.testng.Assert.failNotEquals(Assert.java:776)\r\n\tat org.testng.Assert.assertEqualsImpl(Assert.java:137)\r\n\tat org.testng.Assert.assertEquals(Assert.java:118)\r\n\tat org.testng.Assert.assertEquals(Assert.java:453)\r\n\tat org.testng.Assert.assertEquals(Assert.java:463)\r\n\tat com.stepdefinition.LoginFunction.user_is_able_to_verify_successful_login_verify_page_title(LoginFunction.java:76)\r\n\tat ✽.User is able to verify successful login \u0026 verify page title(file:///C:/Users/mirhuque/eclipse-workspace/Automation_Project/Features/login.feature:13)\r\n",
-              "duration": 42000000,
+              "error_message": "java.lang.AssertionError: expected [Sign in to Zoopla - Zoopla] but found [Sign in to Zoopla - Zooplas67]\r\n\tat org.testng.Assert.fail(Assert.java:96)\r\n\tat org.testng.Assert.failNotEquals(Assert.java:776)\r\n\tat org.testng.Assert.assertEqualsImpl(Assert.java:137)\r\n\tat org.testng.Assert.assertEquals(Assert.java:118)\r\n\tat org.testng.Assert.assertEquals(Assert.java:453)\r\n\tat org.testng.Assert.assertEquals(Assert.java:463)\r\n\tat com.stepdefinition.LoginFunction.user_is_able_to_verify_successful_login_verify_page_title(LoginFunction.java:76)\r\n\tat ✽.User is able to verify successful login \u0026 verify page title(file:///C:/Users/mirhuque/git/mainrepo/Automation_Framework/Features/login.feature:13)\r\n",
+              "duration": 56000000,
               "status": "failed"
             },
             "line": 13,

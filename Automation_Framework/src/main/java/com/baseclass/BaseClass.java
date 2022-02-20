@@ -16,6 +16,7 @@ import org.testng.annotations.Test;
 
 public class BaseClass {
 	
+	
 	public static WebDriver driver;
 	
 	@BeforeMethod
