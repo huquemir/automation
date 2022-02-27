@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="2684" started-at="2022-02-20T18:58:42Z" finished-at="2022-02-20T18:58:45Z">
+  <suite name="Default suite" duration-ms="8884" started-at="2022-02-27T20:23:12Z" finished-at="2022-02-27T20:23:21Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="2684" started-at="2022-02-20T18:58:42Z" finished-at="2022-02-20T18:58:45Z">
-      <class name="com.apitesting.BDDStyleAPI">
-        <test-method status="PASS" signature="getBDDMethod()[pri:0, instance:com.apitesting.BDDStyleAPI@291caca8]" name="getBDDMethod" duration-ms="2640" started-at="2022-02-20T18:58:42Z" finished-at="2022-02-20T18:58:45Z">
+    <test name="Default test" duration-ms="8884" started-at="2022-02-27T20:23:12Z" finished-at="2022-02-27T20:23:21Z">
+      <class name="com.seleniumchallenges.Alerts">
+        <test-method status="PASS" signature="alertMessage()[pri:0, instance:com.seleniumchallenges.Alerts@1f59a598]" name="alertMessage" duration-ms="8843" started-at="2022-02-27T20:23:12Z" finished-at="2022-02-27T20:23:21Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getBDDMethod -->
-      </class> <!-- com.apitesting.BDDStyleAPI -->
+        </test-method> <!-- alertMessage -->
+      </class> <!-- com.seleniumchallenges.Alerts -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
