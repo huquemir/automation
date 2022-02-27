@@ -19,7 +19,9 @@ public class PostMethod {
 		
 		JSONObject data = new JSONObject();
 		data.put("title", "My test title");
-	
+		data.put("body", "This is the new body");
+		
+		
 		httpRequest.header("Content-type","application/json; charset=utf-8");
 		httpRequest.body(data.toJSONString());
 		
