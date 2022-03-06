@@ -7,7 +7,7 @@
 	
     <test name="Zoopla Login Test" >
     <classes>
-       <class name="com.runner.MyRunner" />
+       <class name="com.runner.MyRunner" />    
     </classes>
   </test>
    

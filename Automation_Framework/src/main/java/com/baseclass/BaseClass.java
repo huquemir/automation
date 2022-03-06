@@ -11,6 +11,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -20,6 +21,16 @@ public class BaseClass {
 	public static WebDriver driver;
 	
 	@BeforeMethod
+	public void initialize() {
+		System.setProperty("webdriver.chrome.driver", "./Driver/chromedriver.exe");
+		driver = new ChromeDriver(); // UpCasting polymorphism
+		driver.manage().window().maximize();
+		driver.manage().deleteAllCookies();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	}
+	
+	
+	@BeforeMethod(enabled = false)
 	@Parameters("browser")
 	public void setUp(String browser) {
 		//Where do you implement interface in your framework?
@@ -42,15 +53,6 @@ public class BaseClass {
 		
 	}
 	
-	@Test
-	public void openApplication() {
-		driver.get("https://www.facebook.com/");
-		
-	}
-	
-	
-	
-
 
 
 }
